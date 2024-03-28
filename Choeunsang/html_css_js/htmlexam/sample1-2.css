@@ -1,0 +1,58 @@
+/* 개인정보 */
+.personal-information {
+  padding-bottom: 8px;
+}
+
+.header-picture {
+  width: 80px;
+  height: 110px;
+  padding-right: 10px;
+  object-fit: cover;
+  float: right;
+}
+
+.name {
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding-left: 10px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+}
+
+.each-section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* 깃헙 */
+.repository {
+  margin: 0;
+}
+
+.repository-address {
+  margin-top: 5px;
+  padding-left: 16px;
+}
+
+.repository-language {
+  margin-top: 25px;
+  margin-bottom: 4px;
+}
+
+/* 주요 기술 */
+.main-skill {
+  margin: 0;
+}
+
+.main-skill-detail > p {
+  background-color: #160101;
+  color: white;
+  margin-top: 5px;
+  padding: 3px 5px 3px 5px;
+  border-radius: 10%;
+  display: inline-block;
+}
