@@ -4,47 +4,141 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> 함상진님의 미니홈피 </title>
+        <style>
+            div {
+                background-color: #64BFDE;
+                border: 3px solid black;
+                width: 700px;
+                height: 500px;
+            }
+
+            .float-wrap-title{
+                overflow: hidden;
+            }
+            .visited{
+                float: left;
+                padding-top: 15px;
+            }
+            
+            .title{
+                float: right;
+            }
+
+            p > small:nth-of-type(2){
+                color: red;
+            }
+
+            .profile{
+                border-right: 3px solid black;
+                float: left;
+                padding: 30px;
+                margin: 10px;
+            }
+
+            .today{
+                display: inline;
+            }
+            .today:first-of-type{
+                color: blue;
+            }
+            .float-wrap-main{
+                overflow: hidden;
+            }
+            
+
+            .board{
+                /* float: right; */
+                padding: 30px;
+                margin: 10px;
+            }
+
+            .recent-board{
+                color:blue;
+            }
+
+            .board-title{
+                background-color: blueviolet;
+                display: inline;
+            }
+
+            .board-content{
+                display: inline;
+
+            }
+
+            .today-content{
+                text-align: center;
+            }
+
+            .person-info{
+                border-bottom: 1px solid black;
+            }
+            
+            .comment{
+                padding: 30px;
+                margin-left: 200px;
+            }
+        </style>
+
     </head>
     <body>
-        <header>
-            <h1> 함상진님의 미니홈피 </h1>
-            <p> +:+:+:+:★ⓗⓐⓥⓔ ⓐ ⓝⓘⓒⓔ ⓓⓐⓨ★+:+:+:+:  </p>
-        </header>
+        <div>
+            <header class="float-wrap-title">
+                <p class="visited">
+                    <small>Today: </small>
+                    <small>63</small>
+                    <small>|</small>
+                    <small>Total: 2029392</small>
+                </p>
+                <h1 class="title"> 함상진님의 미니홈피 </h1>
+            </header>
 
-        <hr>
+            <!-- <hr> -->
 
-        <section>
-            <p>
-                <small>Today: 63</small>
-                <small>|</small>
-                <small>Total: 2029392</small>
-            </p>
-        </section>
+            <div class="float-wrap-main">
+                <section class="profile">
+                    <section>
+                        <p class="today"> today is ... </p>
+                        <p class="today">  good  </p>
+                    </section>
+                    <img src="images/blog-profile.jpeg" width="200" alt="싸이월드 짤"/>
+                    <br>
+                    <section class="today-content">
+                        <p>나의 눈물 ... <a href="https://m.blog.naver.com/38qudehd/222695432873" target="_blank">짤 출처</a></p>
+                        <br><br><br>
+                    </section>
+                    <p class="person-info"> history </p>
+                    <section>
+                        구혜선(女) 1984. 11. 9
+                    </section>
+                </section>
 
-        <section>
-            <img src="images/blog-profile.jpeg" width="200" alt="싸이월드 짤"/>
-            <p>
-                학생○lㄹΓ는 죄로                <br>
-                학교ㄹΓ는 교도소øłlnㅓ          <br>
-                교실○lㄹΓ는 감옥○l 갇혀         <br>
-                출석부ㄹΓ는 죄수명단øłl 올ㅇr   <br>
-                교복○l란 죄수복을 입ヱ          <br>
-                공부란 벌을 받ヱ                <br>
-                졸업○l란 석방을 ブl⊂ト린⊂ト.    <br>
+                <section class="board">
+                    <p class="recent-board"> 최근 게시물 </p>
+                    <section>
+                        <p class="board-title"> 동영상 </p>
+                        <p class="board-content"> 첫 번째 글</p>
+                    </section>
+                    <section>
+                        <p class="board-title"> 게시판 </p>
+                        <p class="board-content"> 두 번째 글</p>
+                    </section>
+                    <section>
+                        <p class="board-title"> 갤러리 </p>
+                        <p class="board-content"> 세 번째 글</p>
+                    </section>
 
-                <br>
-                <br>
-
-                <a href="https://m.blog.naver.com/38qudehd/222695432873" target="_blank">짤 출처</a>
-            </p>
-        </section>
-        <hr>
-        <section>
-            <h2> 댓글 </h2>
-            <ol>
-                <li> 홍길동 : 퍼가요~♡ </li>
-                <li> 아무개 : 일촌 고고 </li>
-            </ol>
-        </section>
+                    <section class="comment">
+                        <h2> 일촌평 </h2>
+                        <ol>
+                            <li> 홍길동 : 퍼가요~♡ </li>
+                            <li> 아무개 : 일촌 감사여 </li>
+                        </ol>
+                    </section>
+                </section>
+            </div>
+            <hr>
+            
+        </div>
     </body>
 </html>
