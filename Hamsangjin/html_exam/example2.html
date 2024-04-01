@@ -4,141 +4,126 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> 함상진님의 미니홈피 </title>
-        <style>
-            div {
-                background-color: #64BFDE;
-                border: 3px solid black;
-                width: 700px;
-                height: 500px;
-            }
-
-            .float-wrap-title{
-                overflow: hidden;
-            }
-            .visited{
-                float: left;
-                padding-top: 15px;
-            }
-            
-            .title{
-                float: right;
-            }
-
-            p > small:nth-of-type(2){
-                color: red;
-            }
-
-            .profile{
-                border-right: 3px solid black;
-                float: left;
-                padding: 30px;
-                margin: 10px;
-            }
-
-            .today{
-                display: inline;
-            }
-            .today:first-of-type{
-                color: blue;
-            }
-            .float-wrap-main{
-                overflow: hidden;
-            }
-            
-
-            .board{
-                /* float: right; */
-                padding: 30px;
-                margin: 10px;
-            }
-
-            .recent-board{
-                color:blue;
-            }
-
-            .board-title{
-                background-color: blueviolet;
-                display: inline;
-            }
-
-            .board-content{
-                display: inline;
-
-            }
-
-            .today-content{
-                text-align: center;
-            }
-
-            .person-info{
-                border-bottom: 1px solid black;
-            }
-            
-            .comment{
-                padding: 30px;
-                margin-left: 200px;
-            }
-        </style>
-
+        <link rel="stylesheet" type="text/css" href="css/example2.css">
     </head>
+
     <body>
-        <div>
-            <header class="float-wrap-title">
-                <p class="visited">
-                    <small>Today: </small>
-                    <small>63</small>
-                    <small>|</small>
-                    <small>Total: 2029392</small>
-                </p>
-                <h1 class="title"> 함상진님의 미니홈피 </h1>
-            </header>
+        <div class="all">
+            <div class="flex-display">
+                <section>
+                    <p class="inline"> Today: <p class="inline""> 63 </p> | Total: 2029392</p>
+                </section>
 
-            <!-- <hr> -->
+                <h3 class="blue"> 함상진님의 미니홈피 </h3>
 
-            <div class="float-wrap-main">
-                <section class="profile">
-                    <section>
-                        <p class="today"> today is ... </p>
-                        <p class="today">  good  </p>
-                    </section>
-                    <img src="images/blog-profile.jpeg" width="200" alt="싸이월드 짤"/>
+                <section>
                     <br>
-                    <section class="today-content">
-                        <p>나의 눈물 ... <a href="https://m.blog.naver.com/38qudehd/222695432873" target="_blank">짤 출처</a></p>
-                        <br><br><br>
+                    <small style="color: orange;"> +일촌맺기 +팬되기 </small>
+                    <br>
+                    <small> https://www.vogue.co.kr/2019/10/11/싸이월드-사라지나/ </small>
+                </section>
+            </div>
+
+            <div class="flex-display">
+                <section class="profile">
+                    <section class="today">
+                        <p> </p>
+                        <p> </p>
+                        <p class="blue"> today is ... </p>
+                        <p>  good  </p>
+                        <p> </p>
+                        <p> </p>
                     </section>
+                    <img src="images/profile-image.jpg" class="profile-image" alt= "싸이월드 짤"/>
+                    <br>
+                    <section class="align-center">
+                        <p>나의 눈물 ...</p>
+                        <br><br>
+                    </section>
+
                     <p class="person-info"> history </p>
+                    
                     <section>
-                        구혜선(女) 1984. 11. 9
+                        채연(女) 1978. 12. 10
                     </section>
                 </section>
 
                 <section class="board">
-                    <p class="recent-board"> 최근 게시물 </p>
-                    <section>
-                        <p class="board-title"> 동영상 </p>
-                        <p class="board-content"> 첫 번째 글</p>
+                    <p class="blue"> 최근 게시물 </p>
+                    <section class="flex-display">
+                        <section>
+                            <section class="flex-display">
+                                <p class="recent-board" style="background-color: #64BFDE;"> 동영상 </p>
+                                <p> </p>
+                                <p> 첫 번째 글</p>
+                            </section>
+                            <section class="flex-display">
+                                <p class="recent-board" style="background-color: #6493de;"> 게시판 </p>
+                                <p> 두 번째 글</p>
+                            </section>
+                            <section class="flex-display">
+                                <p class="recent-board" style="background-color: #95d82a;"> 갤러리 </p>
+                                <p> 세 번째 글</p>
+                            </section>
+                            <section class="flex-display">
+                                <p class="recent-board" style="background-color: #d8642a;"> 사진첩 </p>
+                                <p> 네 번째 글</p>
+                            </section>
+                        </section>
+                        <section>
+                            <section class="board-line">
+                                <p> 주크박스 0/12 </p>
+                                <p> 사진첩 10/3941 <p class="board-new">N</p></p>
+                            </section>
+                            <section class="board-line">
+                                <p> 방명록 49/49411 <p class="board-new">N</p></p>
+                                <p> 즐겨찾기 0/3 </p>
+                            </section>
+                        </section>
                     </section>
-                    <section>
-                        <p class="board-title"> 게시판 </p>
-                        <p class="board-content"> 두 번째 글</p>
-                    </section>
-                    <section>
-                        <p class="board-title"> 갤러리 </p>
-                        <p class="board-content"> 세 번째 글</p>
-                    </section>
+                    <section style="margin-top: 50px;">
+                        <section class="flex-display">
+                            <p> 미니 라이프 | </p>
+                            <p class="blue">미니룸</p> 
+                            <p> | 스토리 룸 </p>
 
-                    <section class="comment">
-                        <h2> 일촌평 </h2>
-                        <ol>
-                            <li> 홍길동 : 퍼가요~♡ </li>
-                            <li> 아무개 : 일촌 감사여 </li>
-                        </ol>
+                            <p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>
+
+                            <p class="blue"> 싸이월드 </p>
+                        </section>
+                        <section>
+                            <img src="images/miniroom.png" class="miniroom"/>
+                        </section>
+                        <section class="comment">
+                            <p class="blue"> 일촌평 </p>
+                            <ul style="list-style: circle;">
+                                <li>
+                                    <section>
+                                        <p class="inline"> 퍼가요 ~ ♡ (멋쟁이</p> 
+                                        <p class="inline">홍길동)</p>
+                                        </section> 
+                                </li>
+                                <li>
+                                    <section>
+                                        <p class="inline"> 일촌 감사요 (일촌 거지</p> 
+                                        <p class="inline">아무개)</p>
+                                    </section> 
+                                </li>
+                            </ul>
+                        </section>
                     </section>
                 </section>
+
+                <section>
+                    <p class="sidebar"> 홈 <p>
+                    <p class="sidebar"> 프로필 <p>
+                    <p class="sidebar"> 다이어리 <p>
+                    <p class="sidebar"> 사진첩 <p>
+                    <p class="sidebar"> 게시판 <p>
+                    <p class="sidebar"> 방명록 <p>
+                </section>
+                <section></section><section></section><section></section><section></section><section></section><section></section><section></section><section></section>
             </div>
-            <hr>
-            
         </div>
     </body>
 </html>

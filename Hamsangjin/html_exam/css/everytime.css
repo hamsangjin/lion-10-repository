@@ -1,0 +1,50 @@
+.all{
+    display: flex;
+    border: 1px solid black;
+
+}
+
+.fixed-bar{
+    border: 1px solid black;
+    text-align: center;
+    width: 350px;
+    position: sticky;
+}
+
+.fixedBar-image{
+    padding-top: 30px;
+    margin: 10px;
+    width: 250px;
+}
+
+.login-bar{
+    padding-bottom: 30px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.login{
+    border: 1px solid gainsboro;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.join{
+    /* border: 1px solid gainsboro; */
+    background-color: red;
+    border-radius: 30px;
+    padding: 10px;
+    color: white;
+}
+
+.idPw-find{
+    border-radius: 30px;
+    padding: 10px;
+    color: rgb(120, 120, 120);
+}
+
+
+/*  */
+
+.intro{
+    border: 1px solid black;
+}

@@ -1,0 +1,26 @@
+package com.example.dfsbfs;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class numsExam1 {
+    public static void main(String[] args) {
+        ArrayList<Integer> temp = new ArrayList<>();
+        dfs(0, 3, 2, temp);
+    }
+
+    public static void dfs(int L, int n, int m, List<Integer> temp){
+        if(L == m){
+            for(int x : temp){
+                System.out.print(x + " ");
+            }
+            System.out.println();
+        } else{
+            for(int i = 1; i <= n; i++){
+                temp.add(i);
+                dfs(L + 1, n, m, temp);
+                temp.removeLast();
+            }
+        }
+    }
+}

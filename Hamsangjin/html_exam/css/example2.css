@@ -1,0 +1,153 @@
+div{
+    background-color: white;
+    border: 1px solid black;                
+}
+
+.all {
+    background-color: #64BFDE;
+    border: 1px solid black;
+    width: 1000px;
+    height: 720px;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+.flex-display{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+div.all > div.flex-display > section{
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.inline{
+    display: inline;
+}
+
+div.flex-display > section > p.inline + p.inline{
+    color: red;
+}
+
+div.all > div.flex-display > h3 + section{
+    text-align: right;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+h3.blue{
+    margin-top: 30px;
+}
+
+.blue{
+    color: #6493de;
+    font-weight: bolder;
+}
+
+section > p.blue{
+    margin-bottom: -5px;
+}
+
+section.comment > p.blue{
+    border-bottom: 1px solid black;
+}
+
+div:nth-child(2){
+    border: 2px dashed white;
+}
+
+.profile{
+    border-right: 3px solid black;
+    padding: 30px;
+    margin: 10px;
+}
+
+.today{
+    display: flex;
+    border: 1px solid black;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+ }
+
+.profile-image{
+    width: 200px;
+    height: 250px;
+    border: 1px solid black;
+}
+
+.align-center{
+    text-align: center;
+}
+
+.person-info{
+    text-align: right;
+    border-bottom: 1px solid black;
+}
+
+
+
+
+.board{
+    padding: 30px;
+    margin: 10px;
+    border-right: 3px solid black;
+}
+
+section.flex-display > section > section.flex-display{
+    margin-bottom: -25px;
+    margin-right: 5px;
+}
+
+.recent-board{
+    margin-right: 5px;
+    color: white;
+}
+
+.board-new{
+    background-color: orange;
+    color: white;
+}
+
+.board-line{
+    display: flex;
+    border-bottom: 1px dashed gainsboro;
+    justify-content: space-between;
+}
+
+section.board > p.blue{
+    border-bottom: 1px solid black;
+}
+
+section > section.board-line > p + p{
+    margin-left: 15px;
+}
+
+.miniroom{
+    border: 1px solid black;
+}
+
+p.comment-inline + p.comment-inline{
+    color: #6493de;
+}
+
+
+
+
+
+
+.sidebar{
+    color: white;
+    background-color: #6493de;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+section > p.sidebar:first-of-type{
+    color: black;
+    background-color: white;
+} 
